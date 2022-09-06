@@ -1,0 +1,16 @@
+{
+  "name": "di-clan-member-data-scrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:zivkong/di-clan-member-data-scrap.git",
+  "author": "Ziv Kong <zivkong@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "run-bot": "node index.js"
+  },
+  "dependencies": {
+    "opencv4nodejs": "^5.6.0",
+    "robotjs": "^0.6.0"
+  }
+}
