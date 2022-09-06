@@ -196,6 +196,11 @@ node-abi@^2.13.0, node-abi@^2.7.0:
   dependencies:
     semver "^5.4.1"
 
+node-tesseract-ocr@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/node-tesseract-ocr/-/node-tesseract-ocr-2.2.1.tgz#465fea1a1acd6720efb582d5f6c2bcbb82cce94d"
+  integrity sha512-Q9cD79JGpPNQBxbi1fV+OAsTxYKLpx22sagsxSyKbu1u+t6UarApf5m32uVc8a5QAP1Wk7fIPN0aJFGGEE9DyQ==
+
 noop-logger@^0.1.1:
   version "0.1.1"
   resolved "https://registry.npmjs.org/noop-logger/-/noop-logger-0.1.1.tgz"

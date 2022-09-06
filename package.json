@@ -7,9 +7,10 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "run-bot": "node index.js"
+    "run:bot": "node index.js"
   },
   "dependencies": {
+    "node-tesseract-ocr": "^2.2.1",
     "opencv4nodejs": "^5.6.0",
     "robotjs": "^0.6.0"
   }
