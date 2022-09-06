@@ -1,5 +1,11 @@
 import { clanType } from './config.js'
-import { clickMenu, clickMenuClan, clickImmortalClan, clickImmortalClanMember, clickSortAlphabetical } from './mouseActions/index.js'
+import {
+  clickMenu,
+  clickMenuClan,
+  clickImmortalClan,
+  clickImmortalClanMember,
+  clickSortAlphabetical
+} from './mouseActions/index.js'
 
 const start = async () => {
   try {
