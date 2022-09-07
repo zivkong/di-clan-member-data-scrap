@@ -10,10 +10,12 @@
     "run:bot": "node index.js"
   },
   "dependencies": {
+    "clipboardy": "^3.0.0",
+    "date-fns": "^2.29.2",
     "dotenv": "^16.0.2",
+    "jimp": "^0.16.1",
     "mongoose": "^6.5.4",
     "node-tesseract-ocr": "^2.2.1",
-    "opencv4nodejs": "^5.6.0",
     "robotjs": "^0.6.0"
   }
 }
