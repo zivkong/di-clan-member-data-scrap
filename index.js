@@ -1,7 +1,6 @@
 
 
 import { subDays } from 'date-fns'
-import copyToClipboard from 'clipboardy'
 
 import { clanId, clanType } from './config.js'
 
@@ -17,7 +16,7 @@ import {
   clickClose,
 } from './macros/index.js'
 
-import { computeMemberData } from './computes.js'
+import { computeMemberData } from './computes/index.js'
 
 const wait = ms => new Promise(r => setTimeout(r, ms))
 
@@ -45,7 +44,7 @@ const start = async () => {
     today = subDays(today, 1)
 
     const clanMembers = await ClanMember
-      .find({ clan, updatedAt: { $lt: today } })
+      .find({ clan })
       .cursor()
 
     await clanMembers.eachAsync(computeMemberData)
