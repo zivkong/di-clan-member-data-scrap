@@ -49,6 +49,32 @@ export const clickImmortalClanMember = async () => {
   return
 }
 
+
+export const clickShadowClan = async () => {
+  const x = (screenWidth * 0.13)
+  const y = (screenHeight * 0.85)
+  robot.moveMouse(x, y)
+  robot.mouseClick('left')
+  return
+}
+
+export const scrollShadowClanMember = async () => {
+  const x = (screenWidth * 0.13)
+  const y = (screenHeight * 0.05)
+  robot.mouseToggle("down")
+  robot.dragMouse(x, y)
+  robot.mouseToggle("up")
+  return
+}
+
+export const clickShadowClanMember = async () => {
+  const x = (screenWidth * 0.13)
+  const y = (screenHeight * 0.90)
+  robot.moveMouse(x, y)
+  robot.mouseClick('left')
+  return
+}
+
 export const clickSortAlphabetical = async () => {
   const x = (screenWidth * 0.4)
   const y = (screenHeight * 0.24)

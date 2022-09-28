@@ -13,6 +13,9 @@ import {
   clickImmortalClan,
   scrollImmortalClanMember,
   clickImmortalClanMember,
+  clickShadowClan,
+  scrollShadowClanMember,
+  clickShadowClanMember,
   clickClose,
 } from './macros/index.js'
 
@@ -38,6 +41,12 @@ const start = async () => {
       await clickImmortalClan()
       await scrollImmortalClanMember()
       await clickImmortalClanMember()
+    }
+
+    if (clan.faction === 'shadow') {
+      await clickShadowClan()
+      await scrollShadowClanMember()
+      await clickShadowClanMember()
     }
 
     let today = new Date()

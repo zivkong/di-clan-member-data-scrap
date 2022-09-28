@@ -23,6 +23,10 @@ export const computeMemberData = async (member) => {
 
     copyToClipboard.writeSync(displayName)
 
+    member.resonance = 0
+    member.combatRating = 0
+    await member.save()
+
     if (displayName === process.env.RUNNER_DISPLAY_NAME) {
       console.warn(`Blizzard don't allow click on self ${displayName}`)
       return
